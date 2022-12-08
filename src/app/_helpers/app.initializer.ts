@@ -1,5 +1,5 @@
 import { AuthenticationService } from '@app/_services';
-import { catchError, finalize, of } from 'rxjs';
+import { catchError, of } from 'rxjs';
 
 export function appInitializer(authenticationService: AuthenticationService) {
     return () => authenticationService.refreshToken()
